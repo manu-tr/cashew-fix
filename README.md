@@ -181,11 +181,11 @@ bootstrapApplication(AppComponent, {
 });
 ```
 
-Or by using the `withCache` function:
+Or by using the `withConfig` function:
 
 ```ts
-import { withCache } from '@ngneat/cashew';
-```ts
+import { withConfig } from '@ngneat/cashew';
+
 bootstrapApplication(AppComponent, {
   providers: [
     provideHttpClient(withInterceptors([withHttpCacheInterceptor()])), 
